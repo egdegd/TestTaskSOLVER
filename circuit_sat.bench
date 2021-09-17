@@ -1,0 +1,23 @@
+# s27
+# 4 inputs
+# 1 outputs
+# 2 inverters
+# 4 gates (2 ANDs + 1 OR + 1 XOR)
+
+INPUT(G0)
+INPUT(G1)
+INPUT(G2)
+INPUT(G3)
+
+OUTPUT(G9)
+
+G4 = NOT(G0)
+G6 = NOT(G5)
+
+G8 = AND(G6, G7)
+G9 = AND(G8, G3)
+
+G5 = OR(G4, G1)
+
+G7 = XOR(G5, G2)
+
